@@ -18,7 +18,8 @@
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack serve --hot --mode development --devtool eval-source-map",
-    "build": "webpack --devtool source-map"
+    "build": "webpack --devtool source-map",
+    "updateSnapShot": "jest --updateSnapshot"
   },
   "keywords": [],
   "author": "",
