@@ -11,7 +11,7 @@ export default class Resty extends Component {
     url: '',
     method: '',
     body: '',
-    methods: [],
+    history: [],
     json: { 'Hello': 'I am bored. PLEASE make a fetch!' }
   }
 
@@ -74,12 +74,12 @@ export default class Resty extends Component {
   }
 
   render() {
-    const { url, method, body, json, methods } = this.state;
+    const { url, method, body, json, history } = this.state;
 
     return (
       <>
         <section className={styles.Resty}>
-          <SideBarList methods={methods} onClick={this.handleClick} />
+          <SideBarList history={history} onClick={this.handleClick} />
           <div>
             <Form
               url={url}
