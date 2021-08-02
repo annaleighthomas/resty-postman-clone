@@ -10,7 +10,7 @@ const Form = ({ url, body, method, onSubmit, onChange }) => {
       <form onSubmit={onSubmit}>
         <input type="text" name="url" placeholder="URL" value={url} onChange={onChange} />
         <div>
-          <MethodButtons method={method} onChange={onChange}/>
+          <MethodButtons method={method} onChange={onChange} />
           <button>GO!</button>
         </div>
         <textarea placeholder="Raw JSON body" name={body} value={body} onChange={onChange}></textarea>
